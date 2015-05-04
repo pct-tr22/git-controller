@@ -165,20 +165,20 @@ describe('Repository', function() {
 
     it('should be able to parse commit messages with quotation marks', function(done) {
 
-        //add a file so something can be committed
-        fs.writeFileSync(repo1.path + '/testFile.txt', 'i am a file');
-        repo1.addSync(['testFile.txt']);
+      //add a file so something can be committed
+      fs.writeFileSync(repo1.path + '/testFile.txt', 'i am a file');
+      repo1.addSync(['testFile.txt']);
 
-        var commitMessage = "this commit shouldn't fail due to apostrophe, or \"quotation marks";
+      var commitMessage = "this commit shouldn't fail due to apostrophe, or \"quotation marks";
 
-        repo1.commitSync(commitMessage.replace(/\"/g, '\\"').replace(/\'/g, "\\'"));
+      repo1.commitSync(commitMessage.replace(/\"/g, '\\"').replace(/\'/g, "\\'"));
 
-        repo1.log(function(err, log) {
-            should.not.exist(err);
-            log.should.have.lengthOf(2);
-            repo1.resetSync(log[1].commit); //reset the commit
-            done();
-        });
+      repo1.log(function(err, log) {
+        should.not.exist(err);
+        log.should.have.lengthOf(2);
+        repo1.resetSync(log[1].commit); //reset the commit
+        done();
+      });
 
     });
 
