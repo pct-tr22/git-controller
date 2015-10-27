@@ -1,4 +1,4 @@
-# Gitty
+# Git Controller
 
 [![Build Status](https://travis-ci.org/gordonwritescode/gitty.svg)](https://travis-ci.org/gordonwritescode/gitty)
 
@@ -13,7 +13,7 @@ syntax, executes common commands, and parses the output into operable objects.
 * Git 1.7.x.x (http://git-scm.com)
 
 ```
-$ npm install gitty
+$ npm install git-controller
 ```
 
 ### Testing

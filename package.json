@@ -1,7 +1,7 @@
 {
-  "name": "gitty",
-  "version": "3.2.3",
-  "description": "A Node.js wrapper for the Git CLI",
+  "name": "git-controller",
+  "version": "1.0.0",
+  "description": "A Node.js wrapper for the Git CLI, extened version of gitty.git(https://github.com/gordonwritescode/gitty)",
   "main": "index",
   "dependencies": {
 
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gordonwritescode/gitty.git"
+    "url": "https://github.com/ZenabKhan/git-controller.git"
   },
   "keywords": [
     "git",
@@ -80,6 +80,10 @@
     {
       "name": "Victor Gama",
       "url": "http://vito.io"
+    },
+    {
+      "name": "Zainab Saleem",
+      "url": "https://github.com/ZenabKhan"
     }
   ],
   "license": "LGPLv3"
