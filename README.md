@@ -1,8 +1,6 @@
 # Git Controller
 
-[![Build Status](https://travis-ci.org/gordonwritescode/gitty.svg)](https://travis-ci.org/gordonwritescode/gitty)
-
-Gitty is a Node.js wrapper for Git. It's syntax resembles the Git command line
+Git-controller is a Node.js wrapper for the Git CLI, it is extened version of [gitty](https://github.com/gordonwritescode/gitty). It's syntax resembles the Git command line
 syntax, executes common commands, and parses the output into operable objects.
 
 ## Installation
@@ -27,7 +25,7 @@ $ npm test
 ## Usage
 
 ```js
-var git    = require('gitty');
+var git    = require('git-controller');
 var myRepo = git('/path/to/repo');
 ```
 
@@ -43,9 +41,10 @@ myRepo.log(function(err, log) {
 
 ### Where are the Docs?
 
-For now, use the source, Luke. Pretty much everything you'll need is in
-`lib/repository.js` and it's very readable. Running the test suite will be of
-use as well since all public methods are tested and will print to the console.
+Pretty much everything you'll need is in
+`lib/repository.js` and it's very readable. However you can checkout [List of functions available](https://github.com/marketlytics/git-controller/blob/master/docs/FUNCTIONS.md). 
+Running the test suite will be of use as well since all public methods are tested and will print to the console.
+
 
 ## Authenticated Repositories
 
@@ -59,7 +58,4 @@ myRepo.push('origin', 'master', function(err, succ) {
 });
 ```
 
-## Author
-
-Gitty was written by Gordon Hall (gordon@gordonwritescode.com)  
 Licensed under LGPLv3 license
