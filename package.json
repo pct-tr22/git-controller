@@ -1,9 +1,11 @@
 {
   "name": "git-controller",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Node.js wrapper for the Git CLI, extened version of gitty.git(https://github.com/gordonwritescode/gitty)",
   "main": "index",
-  "dependencies": {},
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
   "devDependencies": {
     "mocha": "^1.21.4",
     "pushover": "^1.3.6",
@@ -18,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marketlytics/git-controller.git"
+    "url": "https://github.com/pct-tr22/git-controller.git"
   },
   "keywords": [
     "git",
@@ -82,6 +84,10 @@
     {
       "name": "Zainab Saleem",
       "url": "https://github.com/ZenabKhan"
+    },
+    {
+        "name": "Shawn Cicoria",
+        "url" : "https://github.com/cicorias"
     }
   ],
   "license": "LGPLv3"
